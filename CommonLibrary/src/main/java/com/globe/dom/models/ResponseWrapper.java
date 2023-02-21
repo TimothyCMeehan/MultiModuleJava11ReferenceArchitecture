@@ -11,7 +11,7 @@ import org.springframework.http.HttpStatus;
 public class ResponseWrapper <E>{
 
     private HttpStatus status;
-    private String message;
+    private MetaData metaData;
     private E data;
 
 

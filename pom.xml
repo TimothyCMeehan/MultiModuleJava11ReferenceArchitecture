@@ -19,6 +19,7 @@
     <modules>
         <module>CommonLibrary</module>
         <module>Service</module>
+        <module>ExceptionsLibrary</module>
     </modules>
 
     <properties>
