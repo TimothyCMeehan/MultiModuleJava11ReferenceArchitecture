@@ -9,7 +9,7 @@
         <version>1.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>ExceptionsLibrary</artifactId>
+    <artifactId>TimBootStarterValidation</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -19,8 +19,18 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
             <groupId>com.globe.dom</groupId>
-            <artifactId>TimBootStarterWeb</artifactId>
+            <artifactId>TimBootStarter</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

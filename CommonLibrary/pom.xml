@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.globe.dom</groupId>
         <artifactId>MultiModuleReferenceArchitecture</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>CommonLibrary</artifactId>
@@ -19,14 +19,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>com.globe.dom</groupId>
+            <artifactId>TimBootStarterWeb</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
